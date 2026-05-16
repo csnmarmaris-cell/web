@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CSN Real Estate & Investment Consultancy — Marmaris</title>
+<meta name="description" content="Marmaris kıyısında lisanslı gayrimenkul ve yatırım danışmanlığı. 33 yıllık CSN birikimi ile." />
+<link rel="icon" href="assets/csn-mark.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="src/styles.css" />
+</head>
+<body>
+
+<!-- ─────────────────────────────────────────────────────────────
+     HEADER
+     ───────────────────────────────────────────────────────── -->
+<header class="site-header" id="siteHeader">
+  <div class="container wide nav-row">
+    <a class="brand" href="#top">
+      <img src="assets/csn-mark.png" alt="CSN" />
+      <span class="wm">
+        <span class="wm-1">CSN</span>
+        <span class="wm-2">Real Estate</span>
+      </span>
+    </a>
+
+    <nav class="nav-links">
+      <a class="nav-link" href="#hakkimizda">Hakkımızda</a>
+      <a class="nav-link" href="#bolgeler">Bölgeler</a>
+      <a class="nav-link" href="#hizmetler">Hizmetler</a>
+      <a class="nav-link" href="#yaklasim">Yaklaşımımız</a>
+      <a class="nav-link" href="#iletisim">İletişim</a>
+    </nav>
+
+    <div class="nav-right">
+      <div class="lang-toggle">
+        <button class="lang-btn is-active" data-lang="tr">TR</button>
+        <span class="lang-sep">/</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <span class="nav-divider"></span>
+      <a class="call-pill" href="tel:+905324528318">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg>
+        <span class="phone-num">+90 532 452 83 18</span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-label="Menüyü aç">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile drawer -->
+<aside class="mobile-drawer" id="mobileDrawer">
+  <div class="mobile-drawer__top">
+    <a class="brand" href="#top">
+      <img src="assets/csn-mark.png" alt="CSN" />
+      <span class="wm">
+        <span class="wm-1">CSN</span>
+        <span class="wm-2">Real Estate</span>
+      </span>
+    </a>
+    <button class="mobile-drawer__close" id="drawerClose" aria-label="Kapat">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <nav class="mobile-drawer__nav">
+    <a href="#hakkimizda" class="drawer-link">Hakkımızda</a>
+    <a href="#bolgeler" class="drawer-link">Bölgeler</a>
+    <a href="#hizmetler" class="drawer-link">Hizmetler</a>
+    <a href="#yaklasim" class="drawer-link">Yaklaşımımız</a>
+    <a href="#iletisim" class="drawer-link">İletişim</a>
+  </nav>
+</aside>
+
+<main id="top">
+
+<!-- ─────────────────────────────────────────────────────────────
+     HERO
+     ───────────────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero__bg hero__bg--photo">
+    <img src="assets/hero-pines.png" alt="Marmaris çam ormanı ve dağ silüeti, gün batımı" />
+
+    <!-- Topografik çizgiler — marka kimliği overlay -->
+    <svg class="hero__topo" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <defs>
+        <linearGradient id="topoFade" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%"  stop-color="#D8C9AE" stop-opacity="0.16"/>
+          <stop offset="60%" stop-color="#D8C9AE" stop-opacity="0.06"/>
+          <stop offset="100%" stop-color="#D8C9AE" stop-opacity="0.02"/>
+        </linearGradient>
+      </defs>
+      <g fill="none" stroke="url(#topoFade)" stroke-width="1">
+        <path d="M-50,160 C 260,120 460,260 760,200 S 1240,80 1660,200"/>
+        <path d="M-50,230 C 260,190 460,330 760,270 S 1240,150 1660,270"/>
+        <path d="M-50,300 C 260,260 460,400 760,340 S 1240,220 1660,340"/>
+        <path d="M-50,370 C 260,330 460,470 760,410 S 1240,290 1660,410"/>
+        <path d="M-50,440 C 260,400 460,540 760,480 S 1240,360 1660,480"/>
+        <path d="M-50,510 C 260,470 460,610 760,550 S 1240,430 1660,550"/>
+        <path d="M-50,580 C 260,540 460,680 760,620 S 1240,500 1660,620"/>
+        <path d="M-50,650 C 260,610 460,750 760,690 S 1240,570 1660,690"/>
+        <path d="M-50,720 C 260,680 460,820 760,760 S 1240,640 1660,760"/>
+      </g>
+    </svg>
+
+    <!-- Sağ üst köşe: konum + lisans rozeti -->
+    <div class="hero__badge">
+      <div class="hero__badge-row"><span>LAT</span><b>36.8533°&nbsp;N</b></div>
+      <div class="hero__badge-row"><span>LON</span><b>28.2741°&nbsp;E</b></div>
+      <div class="hero__badge-row"><span>EST</span><b>1993&nbsp;·&nbsp;33&nbsp;yıl</b></div>
+      <div class="hero__badge-row"><span>
+</span><b>
+</b></div>
+    </div>
+
+    <!-- Sağ alt: mini değerlenme eğrisi -->
+    <div class="hero__chart">
+      <div class="hero__chart-h">
+        <span>Bölgesel Değerlenme Endeksi</span>
+        <em>2020 → 2026</em>
+      </div>
+      <svg viewBox="0 0 240 60" preserveAspectRatio="none" aria-hidden="true">
+        <polyline points="0,52 30,48 60,44 90,40 120,32 150,28 180,20 210,14 240,8"
+                  fill="none" stroke="#D8C9AE" stroke-width="1.4"/>
+        <polyline points="0,52 30,48 60,44 90,40 120,32 150,28 180,20 210,14 240,8 240,60 0,60"
+                  fill="#D8C9AE" fill-opacity="0.06" stroke="none"/>
+        <line x1="0" y1="52" x2="240" y2="52" stroke="#D8C9AE" stroke-opacity="0.18" stroke-dasharray="2 4"/>
+      </svg>
+      <div class="hero__chart-f">
+        <span>+%218<small>kümülatif</small></span>
+        <span>Kaynak <small>· CSN Saha Verisi</small></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container hero__content">
+    <div class="hero__top reveal">
+      <div class="hero__loc">Marmaris · Turunç · Selimiye · Bozburun · Datça</div>
+    </div>
+
+    <h1 class="display-1 reveal d-1">
+      Property Value,<br>
+      <em class="it">Data&#8209;Driven Market Analysis.</em>
+    </h1>
+
+    <p class="hero__sub reveal d-2">
+      <b>CSN Real Estate &amp; Investment Consultancy</b>, SPL Düzey 3 lisanslı kadrosuyla
+      gayrimenkulü bir varlık sınıfı olarak okur. Kira getiri projeksiyonu, bölgesel
+      değerlenme analizi ve çıkış stratejisi modellemesi — kararınızı duyguya değil,
+      finansal analize bağlıyoruz.
+    </p>
+
+    <div class="hero__foot reveal d-4">
+      <div class="hero__actions">
+        <a class="btn btn--light" href="#hakkimizda">
+          Bizi tanıyın
+          <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="link-arrow light" href="#iletisim">
+          Görüşme talep et
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="hero__scroll">Aşağı kaydırın</div>
+</section>
+
+
+<!-- ─────────────────────────────────────────────────────────────
+     INTRO — Biz CSN'yiz
+     ───────────────────────────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <div class="intro">
+      <div class="intro__media reveal">
+        <img src="assets/photo-terrace.png" alt="Marmaris kıyısında bir villa terası" />
+        <div class="intro__media-cap">Bozburun yarımadası</div>
+      </div>
+
+      <div class="intro__body">
+        <div class="eyebrow reveal">Biz CSN'yiz</div>
+        <h2 class="display-2 reveal d-1">
+          Mülk değil,<br>
+          <em class="it">yatırım kararı.</em>
+        </h2>
+        <p class="lede reveal d-2">
+          CSN, gayrimenkulü bir varlık sınıfı olarak ele alır. SPL Düzey 3 lisanslı danışmanlarımız;
+          getiri, risk ve likidite üçgeninde her mülkü finansal modelle değerlendirir.
+        </p>
+        <p class="reveal d-3">
+          33 yıllık CSN birikimini Marmaris kıyısına taşıyoruz. Bölgenin köylerini,
+          parsellerini, planlama kurallarını ve sahiplerini ismen biliyoruz. Bu, listelenmeyen
+          mülklere — koylarda, zeytinliklerde, tepelerde — doğrudan erişim demek.
+        </p>
+        <p class="reveal d-4">
+          Yerel saha bilgisini bölgesel veri analiziyle birleştiriyoruz: kira endeksleri, sezonsal
+          doluluk oranları, parsel bazlı değerlenme eğrileri ve çıkış senaryoları. Karar duyguyla
+          değil, raporla verilir.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─────────────────────────────────────────────────────────────
+     HAKKIMIZDA — Long-form about
+     ───────────────────────────────────────────────────────── -->
+<section class="section section--alt" id="hakkimizda">
+  <div class="container">
+    <div class="section__head reveal">
+      <div class="head-left">
+        <div class="eyebrow" style="margin-bottom:24px">Hakkımızda</div>
+        <h2 class="display-3">
+          33 yıllık CSN birikimi, <em class="it">tek bir kıyı şeridi.</em>
+        </h2>
+      </div>
+      <div class="head-right">
+        Marmaris'in körfez yapısı, mikro iklimleri ve köy karakterleri birbirinden köklü biçimde
+        farklıdır. CSN bu farkı saha araştırması, parsel veritabanı ve bölgesel değerlenme
+        analizleriyle okur. 33 yıllık kurumsal birikimi, kıyı şeridine finansal disiplinle taşıyoruz.
+      </div>
+    </div>
+
+    <div class="principles">
+      <div class="principle reveal">
+        <div class="principle__ix">— 01</div>
+        <h3 class="principle__t">Sahibinin <em>yanında.</em></h3>
+        <p class="principle__d">
+          Alıcı ve satıcının çıkarı arasında pazarlık yapmayız; sözleşmemiz tek bir tarafı temsil
+          etmek üzerine kuruludur. Çelişkisiz, şeffaf, kayıtlı.
+        </p>
+      </div>
+      <div class="principle reveal d-1">
+        <div class="principle__ix">— 02</div>
+        <h3 class="principle__t">Bölgenin <em>sözcüsü.</em></h3>
+        <p class="principle__d">
+          Marmaris ve çevresinde 80'i aşkın köy, mahalle ve mevkii kayıtlıdır. Her parselin imar
+          durumunu, ulaşım hattını, sahile mesafesini ve sahip geçmişini takip ederiz.
+        </p>
+      </div>
+      <div class="principle reveal d-2">
+        <div class="principle__ix">— 03</div>
+        <h3 class="principle__t">Süre değil, <em>süreklilik.</em></h3>
+        <p class="principle__d">
+          Anahtar tesliminden sonra başlayan ilişki bizim için asıl iştir: mülk yönetimi, bakım,
+          sezonluk veya uzun dönem kiralama — siz olmadığınızda biz oradayız.
+        </p>
+      </div>
+    </div>
+
+    <div class="ways-strip">
+      <div class="way reveal">
+        <div class="way__ix">— 01</div>
+        <div class="way__t">Tek tarafı <em>temsil</em></div>
+        <div class="way__d">Sözleşmeli, çelişkisiz danışmanlık. Alıcı ya da satıcının yanında, ikisi arasında değil.</div>
+      </div>
+      <div class="way reveal d-1">
+        <div class="way__ix">— 02</div>
+        <div class="way__t">33 yıllık <em>birikim</em></div>
+        <div class="way__d">CSN'in yıllar içinde damıttığı kurumsal hafızayı, Marmaris kıyısına taşıyoruz.</div>
+      </div>
+      <div class="way reveal d-2">
+        <div class="way__ix">— 03</div>
+        <div class="way__t">Saklı <em>portföy</em></div>
+        <div class="way__d">Halka açık platformlarda görünmeyen, sahipleriyle özel anlaşmalı mülklere doğrudan erişim.</div>
+      </div>
+      <div class="way reveal d-3">
+        <div class="way__ix">— 04</div>
+        <div class="way__t">Anahtar tesliminden <em>sonrası</em></div>
+        <div class="way__d">Mülk yönetimi, bakım, sezonluk veya uzun dönem kiralama — biz oradayız.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─────────────────────────────────────────────────────────────
+     BÖLGELER
+     ───────────────────────────────────────────────────────── -->
+<section class="section" id="bolgeler">
+  <div class="container">
+    <div class="section__head reveal">
+      <div class="head-left">
+        <div class="eyebrow" style="margin-bottom:24px">Faaliyet Bölgelerimiz</div>
+        <h2 class="display-3">
+          Marmaris'in <em class="it">mavi şeridi.</em>
+        </h2>
+      </div>
+      <div class="head-right">
+        Marmaris ve çevresindeki gayrimenkul piyasasını parsel parsel takip ediyoruz —
+        merkez sahil hattından Datça yarımadasının uç köylerine kadar. Her bölgenin
+        kira getirisi, değerlenme ritmi ve yaşam karakteri birbirinden farklı; portföyümüz
+        bu farkı temel alarak şekilleniyor.
+      </div>
+    </div>
+
+    <div class="regions">
+      <article class="region region--lg reveal">
+        <img src="assets/photo-marina-villas.png" alt="Marmaris Merkez" />
+        <span class="region__count">01 / 08</span>
+        <div class="region__body">
+          <div class="region__ix">Merkez</div>
+          <div class="region__name">Marmaris Merkez</div>
+          <div class="region__sub">Kordon · Eski Yerleşim · Marina</div>
+          <div class="region__desc">
+            Marina, yürüyüş bandı ve sahil rezidanslarının kalbi. Yıllık yaşam için en pratik,
+            altyapısı en güçlü bölge.
+          </div>
+        </div>
+      </article>
+
+      <article class="region region--md reveal d-1">
+        <img src="assets/photo-modern.png" alt="İçmeler" />
+        <span class="region__count">02 / 08</span>
+        <div class="region__body">
+          <div class="region__ix">Körfez</div>
+          <div class="region__name">İçmeler</div>
+          <div class="region__sub">Çam ormanı · Yamaç villaları</div>
+          <div class="region__desc">
+            Çam ormanlarıyla sarılı yamaçta, denize bakan büyük arsa villaları. Doğa ve mahremiyet
+            arayanlar için.
+          </div>
+        </div>
+      </article>
+
+      <article class="region region--sm reveal d-2">
+        <img src="assets/photo-contemporary.png" alt="Turunç" />
+        <span class="region__count">03 / 08</span>
+        <div class="region__body">
+          <div class="region__ix">Koy</div>
+          <div class="region__name">Turunç</div>
+          <div class="region__sub">Saklı koy · Butik yerleşim</div>
+          <div class="region__desc">
+            Marmaris'ten dağ yolu ile ayrılmış küçük, sessiz koy. Modern butik villaların
+            yoğunlaştığı, hafta sonu için ideal bölge.
+          </div>
+        </div>
+      </article>
+
+      <article class="region region--sm reveal">
+        <img src="assets/photo-village.png" alt="Selimiye" />
+        <span class="region__count">04 / 08</span>
+        <div class="region__body">
+          <div class="region__ix">Yarımada</div>
+          <div class="region__name">Selimiye</div>
+          <div class="region__sub">Bozburun yarımadası · Sessizlik</div>
+          <div class="region__desc">
+            Bozburun yarımadasının batısında, gulet limanlı dingin köy. Yıl boyu kullanım için
+            butik kiralanan klasik taş evler yoğun.
+          </div>
+        </div>
+      </article>
+
+      <article class="region region--md2 reveal d-1">
+        <img src="assets/photo-stone.png" alt="Bozburun & Söğüt" />
+        <span class="region__count">05 / 08</span>
+        <div class="region__body">
+          <div class="region__ix">Yarımada</div>
+          <div class="region__name">Bozburun &amp; Söğüt</div>
+          <div class="region__sub">Gulet kıyısı · Taş mimari</div>
+          <div class="region__desc">
+            Geleneksel Bozburun mimarisi — taş duvar, ahşap kepenk, bahçe. Yat ile gelinen
+            koylarda yaşamak isteyenler için.
+          </div>
+        </div>
+      </article>
+
+      <article class="region region--sm reveal d-2">
+        <img src="assets/photo-classic.png" alt="Hisarönü" />
+        <span class="region__count">06 / 08</span>
+        <div class="region__body">
+          <div class="region__ix">Körfez</div>
+          <div class="region__name">Hisarönü &amp; Orhaniye</div>
+          <div class="region__sub">Aile rezidansları · Marina</div>
+          <div class="region__desc">
+            Geniş koy, sığ ve sakin deniz. Aile yaşamı ve uzun dönem oturum için tercih edilen,
+            altyapısı kuvvetli bölge.
+          </div>
+        </div>
+      </article>
+
+      <article class="region region--sm reveal d-3">
+        <img src="assets/photo-datca-villa.png" alt="Datça yarımadası" />
+        <span class="region__count">07 / 08</span>
+        <div class="region__body">
+          <div class="region__ix">Yarımada</div>
+          <div class="region__name">Datça yarımadası</div>
+          <div class="region__sub">Badem · Yeşil panjurlu villalar</div>
+          <div class="region__desc">
+            Datça merkezi, Reşadiye ve Karaköy çevresi — temiz hava, badem bahçeleri ve
+            yeşil panjurlu klasik Muğla mimarisi.
+          </div>
+        </div>
+      </article>
+
+      <article class="region region--md2 reveal d-1">
+        <img src="assets/photo-mesudiye.png" alt="Mesudiye & Palamutbükü" />
+        <span class="region__count">08 / 08</span>
+        <div class="region__body">
+          <div class="region__ix">Datça Uç</div>
+          <div class="region__name">Mesudiye &amp; Palamutbükü</div>
+          <div class="region__sub">Çam ormanı · Saklı koylar</div>
+          <div class="region__desc">
+            Datça yarımadasının batı ucundaki sessiz köyler. Knidos örenlerine yakın, taş
+            duvar mimarisi ve kalabalıktan uzak yaşam arıyorsanız.
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─────────────────────────────────────────────────────────────
+     QUOTE / PULL STATEMENT
+     ───────────────────────────────────────────────────────── -->
+<section class="section--alt">
+  <div class="container narrow pull-quote">
+    <div class="pull-quote__mark reveal">"</div>
+    <p class="pull-quote__text reveal d-1">
+      Bir mülk bulmak ile bir yatırımı doğru fiyatlamak aynı şey değildir.
+      <em>Biz ikincisini yaparız.</em>
+    </p>
+    <div class="pull-quote__sig reveal d-2">— CSN Kurumsal Manifesto</div>
+  </div>
+</section>
+
+
+<!-- ─────────────────────────────────────────────────────────────
+     HİZMETLER — Dark section
+     ───────────────────────────────────────────────────────── -->
+<section class="section section--dark" id="hizmetler">
+  <div class="container">
+    <div class="services-intro reveal">
+      <div class="services-intro__txt">
+        <div class="eyebrow light" style="margin-bottom:24px">Hizmetlerimiz</div>
+        <h2 class="display-3">
+          Mülk edinmenin <em class="it">öncesi ve sonrası.</em>
+        </h2>
+      </div>
+      <div class="services-intro__txt">
+        <p>
+          CSN tek tip bir hizmet sunmaz. Müşterinin ihtiyacına göre — alıcı, satıcı, yatırımcı
+          veya mülk sahibi — danışmanlık paketi şekillenir. Aşağıdaki sekiz alanda çalışıyoruz.
+        </p>
+      </div>
+    </div>
+
+    <div class="services-grid">
+      <article class="service-card reveal">
+        <span class="ix">— 01</span>
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+          <path d="M3 11l9-7 9 7v9a1 1 0 01-1 1h-5v-7H9v7H4a1 1 0 01-1-1v-9z"/>
+        </svg>
+        <h3>Alım &amp; Satım <em>Danışmanlığı</em></h3>
+        <p>
+          Müşteri profili ile bölge, mülk tipi ve fiyat aralığı arasında özel eşleştirme.
+          Sözleşmeli olarak tek tarafı temsil ederiz; saklı portföyümüze dahil özel mülklere
+          erişim sağlarız.
+        </p>
+      </article>
+
+      <article class="service-card reveal d-1">
+        <span class="ix">— 02</span>
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+          <path d="M3 17l5-5 4 4 8-9M14 7h7v7"/>
+        </svg>
+        <h3>Yatırım <em>Analizi</em></h3>
+        <p>
+          Kira getiri projeksiyonu, bölgesel değerlenme verisi, çıkış stratejisi simülasyonu.
+          Yatırım kararlarınızı duyguya değil, müşteri özel rapora dayandırırız.
+        </p>
+      </article>
+
+      <article class="service-card reveal d-2">
+        <span class="ix">— 03</span>
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+          <path d="M12 3l8 4v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z"/>
+          <path d="M9 12l2 2 4-4"/>
+        </svg>
+        <h3>Hukuk &amp; <em>Tapu Süreci</em></h3>
+        <p>
+          Anlaşmalı avukat ekibimizle birlikte taşınmaz alım sözleşmesi, tapu devir işlemleri,
+          DASK, abonelikler. Yabancı uyruklu müşteriler için ayrıca konsolosluk koordinasyonu.
+        </p>
+      </article>
+
+      <article class="service-card reveal d-3">
+        <span class="ix">— 04</span>
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+          <circle cx="8" cy="14" r="4"/>
+          <path d="M11 11l9-9M15 6l3 3"/>
+        </svg>
+        <h3>Mülk <em>Yönetimi</em></h3>
+        <p>
+          Siz olmadığınızda evinizin gündelik bakımı — temizlik, peyzaj, havuz, klima, küçük
+          onarım. Aylık denetim raporu ve şeffaf hesap takibi.
+        </p>
+      </article>
+
+      <article class="service-card reveal d-4">
+        <span class="ix">— 05</span>
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+          <rect x="3" y="6" width="18" height="14" rx="1"/>
+          <path d="M3 10h18M7 14h4"/>
+        </svg>
+        <h3>Kiralama <em>Yönetimi</em></h3>
+        <p>
+          Sezonluk veya uzun dönem kiralama — listeleme, rezervasyon, misafir ağırlama, çıkış
+          kontrolü. Sahiplerin pasif gelir hedeflerine ulaşması için profesyonel operasyon.
+        </p>
+      </article>
+
+      <article class="service-card reveal d-5">
+        <span class="ix">— 06</span>
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+          <path d="M3 21V8l9-5 9 5v13M9 21v-7h6v7"/>
+        </svg>
+        <h3>Mimari &amp; <em>Renovasyon</em></h3>
+        <p>
+          Anlaşmalı mimar ve müteahhitler ile mevcut mülkün dönüşümü; geleneksel taş evlerin
+          yeniden işlenmesi, çağdaş eklemeler, peyzaj. Anahtar teslim teklif.
+        </p>
+      </article>
+
+      <article class="service-card reveal d-4">
+        <span class="ix">— 07</span>
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+          <circle cx="12" cy="12" r="9"/>
+          <path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/>
+        </svg>
+        <h3>Yabancılar için <em>Vatandaşlık</em></h3>
+        <p>
+          Türk Vatandaşlığı için Yatırım programı (400.000 USD eşik) ile uyumlu mülk seçimi,
+          gerekli ekspertiz raporu, başvuru takibi. Pasaport çıkana kadar tek temas noktası.
+        </p>
+      </article>
+
+      <article class="service-card reveal d-5">
+        <span class="ix">— 08</span>
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+          <path d="M12 22s7-7 7-12a7 7 0 10-14 0c0 5 7 12 7 12z"/>
+          <circle cx="12" cy="10" r="2.5"/>
+        </svg>
+        <h3>Saklı <em>Portföy Erişimi</em></h3>
+        <p>
+          Halka açık ilan platformlarında görünmeyen, sahipleriyle özel anlaşmalı mülkler.
+          Bu portföye yalnızca CSN müşterileri erişebilir; tanışma görüşmesi sonrası açılır.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─────────────────────────────────────────────────────────────
+     YAKLAŞIM — Process
+     ───────────────────────────────────────────────────────── -->
+<section class="section" id="yaklasim">
+  <div class="container">
+    <div class="section__head reveal">
+      <div class="head-left">
+        <div class="eyebrow" style="margin-bottom:24px">Yaklaşımımız</div>
+        <h2 class="display-3">
+          Dört adım, <em class="it">acelesiz bir süreç.</em>
+        </h2>
+      </div>
+      <div class="head-right">
+        Mülk alımı veya yatırım kararı ortalama 4–10 hafta süren bir süreç. CSN'in dahil olduğu
+        her aşamada acelesiz, kayıt altında ve şeffaf çalışılır. Aşağıda dört temel adım — gerekirse
+        farklı sıra ile uyarlanır.
+      </div>
+    </div>
+
+    <div class="process">
+      <div class="step reveal">
+        <div class="step__num">01</div>
+        <div class="step__t">Tanışma &amp; <em>dinleme</em></div>
+        <div class="step__d">
+          Ofiste veya online — kısa bir tanışma görüşmesi. Yaşam senaryosu, bütçe, zaman çerçevesi
+          ve özel istekleri birlikte yazıya döküyoruz. Bir taahhüt değil, bir başlangıç.
+        </div>
+        <svg class="step__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+          <path d="M21 11.5a8.4 8.4 0 01-9 8.4 8.4 8.4 0 01-7.4-4L3 21l5.1-1.6a8.4 8.4 0 0112.9-7.9z"/>
+        </svg>
+      </div>
+
+      <div class="step reveal d-1">
+        <div class="step__num">02</div>
+        <div class="step__t">Bölge &amp; <em>portföy araştırması</em></div>
+        <div class="step__d">
+          Tanışma görüşmesinden bir hafta içinde, dış portföydeki ilanların yanı sıra saklı
+          portföyümüzden müşteri profiline uygun 6–12 mülkü kısa belgeler halinde paylaşırız.
+        </div>
+        <svg class="step__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+          <circle cx="11" cy="11" r="7"/><path d="M21 21l-5-5"/>
+        </svg>
+      </div>
+
+      <div class="step reveal d-2">
+        <div class="step__num">03</div>
+        <div class="step__t">Yerinde <em>keşif</em></div>
+        <div class="step__d">
+          Önce sahile, sonra zeytinliklere, ardından villalara. Genelde iki tam günlük programla
+          5–8 mülk yerinde gezilir. CSN ekibi tüm gün eşlik eder; teknik soru bulunursa anlaşmalı
+          mimar ve inşaat mühendisleri çağrılır.
+        </div>
+        <svg class="step__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+          <path d="M12 22s7-7 7-12a7 7 0 10-14 0c0 5 7 12 7 12z"/>
+          <circle cx="12" cy="10" r="2.5"/>
+        </svg>
+      </div>
+
+      <div class="step reveal d-3">
+        <div class="step__num">04</div>
+        <div class="step__t">Hukuki süreç &amp; <em>anahtar teslim</em></div>
+        <div class="step__d">
+          Tercih edilen mülk için fiyat görüşmesi, ön sözleşme, ekspertiz, tapu süreci. Pakete
+          dahil olan yönetim hizmetleri tapu anından itibaren devreye girer — biz hâlâ buradayız.
+        </div>
+        <svg class="step__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+          <circle cx="8" cy="14" r="4"/>
+          <path d="M11 11l9-9M15 6l3 3"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─────────────────────────────────────────────────────────────
+     İLETİŞİM
+     ───────────────────────────────────────────────────────── -->
+<section class="section section--alt" id="iletisim">
+  <div class="container">
+    <div class="contact-layout">
+      <div class="contact-info reveal">
+        <div class="eyebrow" style="margin-bottom:24px">İletişim</div>
+        <h2 class="display-3">
+          Bir tanışma <em class="it">kahvesine ne dersiniz?</em>
+        </h2>
+        <p>
+          Marmaris merkez ofisimizde sizi ağırlamaktan memnuniyet duyarız.
+          Veya aşağıdaki forma kısa bir not bırakın — 24 saat içinde dönüş yapıyoruz.
+          Acil sorularınız için telefon ve WhatsApp hattımız her gün açık.
+        </p>
+
+        <div class="contact-list">
+          <div class="contact-row">
+            <span class="lbl">Ofis</span>
+            <span class="val">
+              Sinan, Cumhuriyet Cd. No:21 D:B<br>
+              48700 Marmaris / Muğla
+              <small>Pazartesi – Cumartesi · 09:30 – 19:00</small>
+            </span>
+          </div>
+          <div class="contact-row">
+            <span class="lbl">Telefon</span>
+            <span class="val">
+              <a href="tel:+905324528318">+90 532 452 83 18</a>
+              <small>WhatsApp aynı numara üzerinden</small>
+            </span>
+          </div>
+          <div class="contact-row">
+            <span class="lbl">E-posta</span>
+            <span class="val">
+              <a href="mailto:info@csnrealestate.com">info@csnrealestate.com</a>
+              <small>Genel sorular ve bilgi talepleri</small>
+            </span>
+          </div>
+          <div class="contact-row">
+            <span class="lbl">Randevu</span>
+            <span class="val">
+              Pazar günleri yalnızca önceden randevu ile.
+              <small>Yerinde mülk gezisi için 48 saat önceden planlanır.</small>
+            </span>
+          </div>
+        </div>
+
+        <a class="map-card" href="https://maps.google.com/?cid=959998562672786408" target="_blank" rel="noopener" aria-label="Google Haritalar'da aç">
+          <iframe
+            src="https://www.google.com/maps?q=Sinan%2C+Cumhuriyet+Cd.+No%3A21+D%3AB%2C+48700+Marmaris%2FMu%C4%9Fla&z=17&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="CSN Marmaris Ofisi — Google Haritalar"
+            allowfullscreen></iframe>
+          <div class="map-card__overlay">
+            <div class="map-card__pin">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22s7-7 7-12a7 7 0 10-14 0c0 5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <span>Haritada aç</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <form class="contact-form reveal d-1" id="contactForm" novalidate>
+        <h3>Bize yazın</h3>
+        <p class="form-sub">Birkaç bilgi paylaşın; size kısa bir notla dönelim.</p>
+
+        <div class="field-group">
+          <div class="form-field">
+            <label for="f-name">Ad Soyad</label>
+            <input type="text" id="f-name" name="name" placeholder="Adınız Soyadınız" />
+            <span class="err"></span>
+          </div>
+          <div class="form-field">
+            <label for="f-email">E-posta</label>
+            <input type="email" id="f-email" name="email" placeholder="ornek@eposta.com" />
+            <span class="err"></span>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <div class="form-field">
+            <label for="f-phone">Telefon</label>
+            <input type="tel" id="f-phone" name="phone" placeholder="+90 5__ ___ __ __" />
+            <span class="err"></span>
+          </div>
+          <div class="form-field">
+            <label for="f-subject">Konu</label>
+            <select id="f-subject" name="subject">
+              <option value="">Seçiniz</option>
+              <option>Genel bilgi</option>
+              <option>Alım danışmanlığı</option>
+              <option>Satım danışmanlığı</option>
+              <option>Yatırım analizi</option>
+              <option>Mülk yönetimi</option>
+              <option>Kiralama</option>
+              <option>Vatandaşlık (yabancı yatırımcı)</option>
+              <option>Diğer</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field-group field-group--full">
+          <div class="form-field">
+            <label for="f-message">Mesajınız</label>
+            <textarea id="f-message" name="message" placeholder="Nasıl yardımcı olabiliriz?"></textarea>
+            <span class="err"></span>
+          </div>
+        </div>
+
+        <div class="form-foot">
+          <label class="consent" id="consentLabel">
+            <input type="checkbox" id="f-consent" name="consent" />
+            <span>
+              <span data-comment-anchor="kvkk">KVKK aydınlatma metnini okudum ve kişisel verilerimin işlenmesine onay veriyorum.</span>
+            </span>
+          </label>
+          <button type="submit" class="btn">
+            Mesajı Gönder
+            <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+        </div>
+
+        <div class="form-success" id="formSuccess" style="display:none">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5 9-12"/></svg>
+          <div>
+            <strong>Mesajınız bize ulaştı.</strong>
+            Bir danışmanımız 24 saat içinde sizinle iletişime geçecek.
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+
+<!-- ─────────────────────────────────────────────────────────────
+     FOOTER
+     ───────────────────────────────────────────────────────── -->
+<footer class="site-footer">
+  <div class="container wide">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="mark">
+          <img src="assets/csn-mark.png" alt="CSN" />
+          <div>
+            <div class="wm-1">CSN</div>
+            <div class="wm-2">Real Estate</div>
+          </div>
+        </div>
+        <p class="footer-blurb">
+          Marmaris kıyı şeridinde veriye dayalı gayrimenkul ve yatırım danışmanlığı.
+          33 yıllık CSN birikimi, SPL Düzey 3 lisanslı kadro.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Sayfalar</h5>
+        <ul>
+          <li><a href="#hakkimizda">Hakkımızda</a></li>
+          <li><a href="#bolgeler">Bölgeler</a></li>
+          <li><a href="#hizmetler">Hizmetler</a></li>
+          <li><a href="#yaklasim">Yaklaşımımız</a></li>
+          <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>İletişim</h5>
+        <p>
+          <strong>Sinan Mah. Cumhuriyet Cd.</strong><br>
+          No:21 D:B, 48700 Marmaris<br>
+          Muğla / Türkiye<br><br>
+          <a href="tel:+905324528318">+90 532 452 83 18</a><br>
+          <a href="mailto:info@csnrealestate.com">info@csnrealestate.com</a>
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Yasal</h5>
+        <ul>
+          <li><a href="#">KVKK Aydınlatma Metni</a></li>
+          <li><a href="#">Gizlilik Politikası</a></li>
+          <li><a href="#">Çerez Politikası</a></li>
+          <li><a href="#">Kullanım Koşulları</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>© 2026 CSN Real Estate &amp; Investment Consultancy. Tüm hakları saklıdır.</div>
+      <div class="footer-socials">
+        <a href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+        </a>
+        <a href="#" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.55 15.18L2 22l4.95-1.3A10 10 0 1012 2zm5.4 14.2c-.23.65-1.34 1.24-1.86 1.3-.47.05-1.08.08-1.74-.11-.4-.13-.92-.3-1.58-.59-2.78-1.2-4.6-4-4.74-4.18-.14-.18-1.13-1.5-1.13-2.87 0-1.36.71-2.03.97-2.31.25-.28.55-.35.74-.35.18 0 .37 0 .53.01.17.01.4-.06.62.47.23.55.78 1.91.85 2.05.07.14.12.3.02.49-.1.18-.14.3-.28.46-.14.16-.3.36-.42.49-.14.14-.29.29-.12.57.16.28.74 1.22 1.59 1.97 1.09.97 2.01 1.27 2.3 1.41.28.14.45.12.62-.07.16-.18.71-.83.9-1.11.18-.28.37-.23.62-.14.25.09 1.6.76 1.88.89.28.14.46.21.53.32.07.12.07.65-.16 1.3z"/></svg>
+        </a>
+        <a href="#" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zM8.5 18H6V10h2.5v8zM7.3 8.9a1.4 1.4 0 110-2.8 1.4 1.4 0 010 2.8zM18 18h-2.5v-3.9c0-.9-.3-1.5-1.1-1.5-.7 0-1.1.5-1.3.9-.1.2-.1.4-.1.6V18H10.5v-8H13v1.1c.3-.5 1-1.2 2.3-1.2 1.7 0 2.7 1.1 2.7 3.4V18z"/></svg>
+        </a>
+      </div>
+      <div>Marmaris'te tasarlandı · 36.8533° N 28.2741° E</div>
+    </div>
+  </div>
+</footer>
+
+<script src="src/main.js"></script>
+</body>
+</html>
