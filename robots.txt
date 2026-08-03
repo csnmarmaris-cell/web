@@ -1,0 +1,42 @@
+# CSN Marmaris — csnmarmaris.com
+# Tüm arama motorlarına ve yapay zekâ tarayıcılarına açık.
+
+User-agent: *
+Allow: /
+
+# ── Yapay zekâ / cevap motorları ─────────────────────────────
+# LLM görünürlüğü hedeflendiği için bunlar bilinçli olarak açık.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+Sitemap: https://www.csnmarmaris.com/sitemap.xml
